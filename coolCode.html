@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="coolStyle.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css">
+        <script src="https://kit.fontawesome.com/6bfbfd351b.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.6.1.js" ></script>
+        <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js" ></script>
+        <script>
+            $(document).ready(function (){
+                $('#example').DataTable();
+            });
+        </script>
+        <title>COP4331 Coolest Contacts List App Ever</title>
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <form class ="search-bar">
+                    <input type="search-name" class="contact-search" name="search-area" placeholder="Search">
+                </form>
+                <a href="add.html"> <!-- should this go back to home page or viewign the contacst profile cause what if editing something and no one is made who does it go back to-->
+                    <i class="fa-solid fa-user-plus"></i> <!-- this is the icons add button-->
+                </a>
+            </header>
+
+            <section class="contacts-title">C  O  N  T  A  C  T  S</section>
+            <section class="contacts-slogan">beloved by baristas</section>
+
+            <section class="theTable">
+                <table id="example" class="display" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>First Name</th>        
+                            <th>Last Name</th>       
+                            <th>Email Address</th>       
+                            <th>Phone Number</th>   
+                            <th>
+                            <a href="contact-profile.html">
+                                <li class="list_item">
+                                    <i class="fa-solid fa-edit"></i> 
+                                </li>
+                            </a>  
+                            </th>           
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Richard</td>        
+                            <td>Lineneck</td>       
+                            <td>richard@knights.ucf.edu</td>       
+                            <td>911-234-1829</td>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>Obama</td>        
+                            <td>Himself</td>       
+                            <td>obaam3345@gmail.com</td>       
+                            <td>983-768-1823</td>           
+                        </tr>
+                        <tr>
+                            <td>Sean</td>        
+                            <td>Merkel</td>       
+                            <td>1wdfjsm3l@gmail.com</td>       
+                            <td>651-221-3319</td>  
+                            <a href="contact-profile.html">
+                                <p> edit placeholder </p>
+                            </a>  
+                            </th>          
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+<!---
+            <section class="contacts-library"></section>
+                <ul class="contacts-list">
+                    <a href="contact-profile.html">
+                        <div class="contact-section">  
+                            <li class="list_item">
+                                <p class="contact-name">Richard Lineneck</p> 
+                            </li>
+                            <li class="list_item">
+                                <p class="email">richarduses@knights.ucf.edu</p>
+                            </li>
+                            <li class="list_item">
+                                <p class="number">911-911-9119</p>
+                            </li>
+                            <li class="list_item">
+                                <i class="fa-solid fa-edit"></i> 
+                            </li>
+                        </div>
+                    </a>
+
+                    <hr>
+                    
+                    <a href="contact-profile.html">
+                        <div class="contact-section">  
+                            <li class="list_item">
+                                <p class="contact-name">Obama Himself</p> 
+                            </li>
+                            </li>
+                            <li class="list_item">
+                                <p class="email">16obama@gmail.com</p>
+                            </li>
+
+                            <li class="list_item">
+                                <p class="number">123-453-2133</p>
+                            </li>
+                            <li class="list_item">
+                                <i class="fa-solid fa-edit"></i> 
+                            </li>
+                        </div>
+                    </a>
+
+                    <hr>
+
+                    <a href="contact-profile.html">
+                        <div class="contact-section">   
+                            <li class="list_item">
+                                <p class="contact-name">Sean Merkel</p> 
+                            </li>
+                            <li class="list_item">
+                                <p class="email">testing@gmail.com</p>
+                            </li>
+
+                            <li class="list_item">
+                                <p class="number">541-234-1821</p>
+                            </li>
+                            <li class="list_item">
+                                <i class="fa-solid fa-edit"></i> 
+                            </li>
+                        </div>
+                    </a>  
+                </ul>
+            </section>
+        -->
+        </div>
+    </body>
+</html>
